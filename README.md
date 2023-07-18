@@ -9,10 +9,10 @@ Instruction
 ![](songsDB.png)
 
 - Artists, containing the following data: name, date of birth, genre(s)
-![](artistDB.png)
+![](artistsDB.png)
 
 - Popular Songs, containing the following data: the title of the song, how many times it’s played, period of time
-![](popular_songsDB.png)
+![](Popular_songsDB.png)
 
 2. Populate the database you’ve created above with at least 10 data for each collection
 
