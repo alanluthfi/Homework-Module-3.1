@@ -1,0 +1,30 @@
+Mongosh Script
+
+use music //switch to music database
+
+//add songs
+for (let i = 0; i < 10; i++) { 
+	db.songs.insertOne({ 
+		"title": "Musik" + i,
+		"artists": [`artists ${i}`, `artists ${i+1}`],
+		"album": "album" + i
+	});
+}
+
+//add artists
+for (let i = 0; i < 10; i++) { 
+	db.artists.insertOne({ 
+		"name": "name" + i,
+		"dateOfBirth": `199${i}-0${i}-0${i}`,
+ 		"genres": [`Genre ${i}`, `Genre ${i+1}`]
+	});
+}
+
+//add popular songs
+for (let i = 0; i < 10; i++) { 
+	db.popular_songs.insertOne({ 
+		"title": "Musik" + i,
+		"plays": Math.floor(Math.random() * 120),
+ 		"period": `200${i}-0${i}-0${i} - 200${i+1}-0${i}-0${i}` 
+	});
+}
